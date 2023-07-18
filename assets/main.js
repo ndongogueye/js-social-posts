@@ -112,3 +112,8 @@ Containers.append(div);
 
 
 });
+
+
+div.querySelector(".like-button").addEventListener("click", function () {
+  div.querySelector(".js-like-counter").textContent =
+})
