@@ -55,3 +55,8 @@ const posts = [
         "created": "2021-03-05"
     }
 ];
+
+
+let feed = document.createElement("div");
+postDiv.classList.add("post");
+
