@@ -57,7 +57,7 @@ const posts = [
     }
 ];
 
-let Containers = document.getElementById("container");
+let Containers = document.querySelector(".posts-list");
 
 
 let counter = 1;
@@ -115,5 +115,5 @@ Containers.append(div);
 
 
 div.querySelector(".like-button").addEventListener("click", function () {
-  div.querySelector(".js-like-counter").textContent =
+
 })
