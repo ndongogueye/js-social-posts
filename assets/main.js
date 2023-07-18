@@ -61,5 +61,5 @@ let postDIv = document.createElement("div");
 postDIv.classList.add("post");
 
 
-var headerDiv = document.createElement("div");
+let headerDiv = document.createElement("div");
 headerDiv.classList.add("post__header");
