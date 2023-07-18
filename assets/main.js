@@ -57,6 +57,9 @@ const posts = [
 ];
 
 
-let feed = document.createElement("div");
-postDiv.classList.add("post");
+let postDIv = document.createElement("div");
+postDIv.classList.add("post");
 
+
+var headerDiv = document.createElement("div");
+headerDiv.classList.add("post__header");
