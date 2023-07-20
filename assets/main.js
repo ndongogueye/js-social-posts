@@ -114,6 +114,32 @@ Containers.append(div);
 });
 
 
-div.querySelector(".like-button").addEventListener("click", function () {
+const likeBtns = document.querySelectorAll(".like-button");
+const likeCounters = document.querySelectorAll(".js-likes-counter");
+console.log(likeCounters);
 
+likeBtns.forEach ((singleButton, i) =>{
+
+    console.log(singleButton);
+
+            
+
+    singleButton.addEventListener ('click', function(){
+
+
+         
+        if (this.classList.contains("like-button--liked")){
+            this.classList.remove("like-button--liked");
+            likeCounters[i].innerHTML = parseInt(likeCounters[i].innerHTML) - 1;
+
+            
+
+         
+        } else {
+            this.classList.add("like-button--liked");
+            likeCounters[i].innerHTML = parseInt(likeCounters[i].innerHTML) + 1;
+
+        }
+
+    })
 })
